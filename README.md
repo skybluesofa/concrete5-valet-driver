@@ -1,15 +1,24 @@
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://github.com/skybluesofa/Concrete5-Valet-Driver)
 
 # Concrete5-Valet-Driver
-Laravel Valet driver for Concrete5
+This is a custom driver for [Valet](https://laravel.com/docs/master/valet) so you can serve [concrete5](http://concrete5.org) sites.
 
 ## Installation 
 
-Install this file in your .valet/Drivers directory
+Once you've [installed Valet](https://laravel.com/docs/master/valet#installation), just load the custom driver:
+
+```bash
+cd ~/.valet/Drivers/
+git clone https://github.com/skybluesofa/concrete5-valet-driver .
+valet restart
+```
+or
+
+install this file in your .valet/Drivers directory
 
 ## Official Valet Documentation
 
-Documentation for the framework can be found on the [Laravel website](https://laravel.com/docs/5.2/valet).
+Documentation for the Valet framework can be found on the [Laravel website](https://laravel.com/docs/master/valet).
 
 ## Contributing
 
