@@ -5,17 +5,7 @@ This is a custom driver for [Valet](https://laravel.com/docs/master/valet) so yo
 
 ## Installation 
 
-Once you've [installed Valet](https://laravel.com/docs/master/valet#installation), just load the custom driver:
-
-
-```bash
-cd ~/.valet/Drivers/
-git clone https://github.com/skybluesofa/concrete5-valet-driver .
-valet restart
-```
-or
-
-install this file in your .valet/Drivers directory
+Once you've [installed Valet](https://laravel.com/docs/master/valet#installation), just move the driver to your ~/.valet/Drivers/ directory
 
 ## Official Valet Documentation
 
