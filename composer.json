@@ -1,0 +1,14 @@
+{
+  "name": "skybluesofa/concrete5-valet-driver",
+  "description": "Custom concrete5 driver for Laravel Valet.",
+  "keywords": [
+    "laravel", "valet", "concrete5"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.6"
+  },
+  "bin": [
+    "skybluesofa"
+  ]
+}
