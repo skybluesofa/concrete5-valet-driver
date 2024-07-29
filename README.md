@@ -1,11 +1,12 @@
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://github.com/skybluesofa/Concrete5-Valet-Driver)
 
-# Concrete5-Valet-Driver
-This is a custom driver for [Valet](https://laravel.com/docs/master/valet) so you can serve [concrete5](http://concrete5.org) sites.
+# Concrete CMS Valet Driver
+
+This is a custom driver for [Valet](https://laravel.com/docs/master/valet) so you can serve [Concrete CMS](https://www.concretecms.com/) sites.
 
 ## Compatibility
 
-As Valet requires the use of PHP7, this driver *should* work for versions of concrete5 from 5.7.5.4+, including v8.
+As Valet requires the use of PHP7, this driver *should* work for versions of Concrete CMS from 5.7.5.4+, including v8 and v9.
 
 ## Installation 
 
