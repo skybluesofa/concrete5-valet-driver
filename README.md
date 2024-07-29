@@ -9,7 +9,7 @@ As Valet requires the use of PHP7, this driver *should* work for versions of con
 
 ## Installation 
 
-Once you've [installed Valet](https://laravel.com/docs/master/valet#installation), just move the driver to your *~/.valet/Drivers/* directory
+Once you've [installed Valet](https://laravel.com/docs/master/valet#installation), just move the driver to your `~/.config/valet/Drivers/*` directory
 
 ## Official Valet Documentation
 

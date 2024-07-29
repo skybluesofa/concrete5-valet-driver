@@ -1,19 +1,18 @@
 <?php
 
+namespace Valet\Drivers\Custom;
+
+use Valet\Drivers\ValetDriver;
+
 class ConcreteValetDriver extends ValetDriver
 {
     /**
      * Determine if the driver serves the request.
-     *
-     * @param  string  $sitePath
-     * @param  string  $siteName
-     * @param  string  $uri
-     * @return bool
      */
-    public function serves($sitePath, $siteName, $uri)
+    public function serves(string $sitePath, string $siteName, string $uri): bool
     {
-        if (file_exists($sitePath.'/concrete/dispatcher.php')) {
-             return true;
+        if (file_exists($sitePath . '/concrete/dispatcher.php')) {
+            return true;
         }
 
         return false;
@@ -21,18 +20,14 @@ class ConcreteValetDriver extends ValetDriver
 
     /**
      * Determine if the incoming request is for a static file.
-     *
-     * @param  string  $sitePath
-     * @param  string  $siteName
-     * @param  string  $uri
      * @return string|false
      */
-    public function isStaticFile($sitePath, $siteName, $uri)
+    public function isStaticFile(string $sitePath, string $siteName, string $uri)/*: string|false */
     {
-        if (file_exists($staticFilePath = $sitePath.'/application/files/'.$uri)) {
+        if (file_exists($staticFilePath = $sitePath . '/application/files/' . $uri)) {
             return $staticFilePath;
         }
-        if (file_exists($staticFilePath = $sitePath.$uri)) {
+        if (file_exists($staticFilePath = $sitePath . $uri)) {
             return $staticFilePath;
         }
 
@@ -41,15 +36,10 @@ class ConcreteValetDriver extends ValetDriver
 
     /**
      * Get the fully resolved path to the application's front controller.
-     *
-     * @param  string  $sitePath
-     * @param  string  $siteName
-     * @param  string  $uri
-     * @return string
      */
-    public function frontControllerPath($sitePath, $siteName, $uri)
+    public function frontControllerPath(string $sitePath, string $siteName, string $uri): string
     {
         $_SERVER['SCRIPT_FILENAME'] = $sitePath . '/index.php';
-        return $sitePath.'/index.php';
+        return $sitePath . '/index.php';
     }
 }
